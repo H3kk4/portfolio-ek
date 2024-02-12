@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=K2D);
+
+*{
+  list-style:none;
+  padding:0;
+  margin:0;
+  font-family:"K2D";
+  text-decoration:none;
+  box-sizing:border-box;
+  color:#B3B2B2;
+}
+
+.content {
+    position: absolute;
+  /* background: #4C3957; */
+  height:100vh;
+  width:100vw;
+  /* background-size:cover; */
+  z-index: -1;
+}
+
+.content .video-lecteur{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-container {
+    position: absolute;
+    width: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.text-container .titre {
+    position: absolute;
+    z-index: 100;
+    /* top:20vh;
+    left:20vw; */
+    margin: 0 auto;
+    font-size: 80px;
+    color:white;
+    text-shadow: -2px 2px 5px black;
+    margin:0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: write 2s steps(20, end) forwards;
+    border-right: 2px solid transparent;
+}
+
+.text-container p {
+    position:absolute;
+    /* top:50%;
+    left:25%; */
+}
+
+.navbar {
+  position:absolute;
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+  padding:10px;
+  background:#414073;
+  align-items:center;
+  text-shadow: -2px 2px 5px black;
+}
+
+.navbar a {
+  font-size:30px;
+}
+
+.navbar .logo {
+  font-size:30px;
+  font-weight:bold;
+  margin: 0 20px;
+  color:white;
+}
+.navbar .nav-links ul {
+  display:flex;
+}
+
+.navbar .nav-links ul li {
+  margin : 0 40px;
+}
+
+.navbar .nav-links ul li a.active {
+    color:white;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index: 1;
+    background:#414073;
+    width: 100%;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+}
+
+.footer .mentions {
+    color:#B3B2B2;
+}
+
+/* KEYFRAMES ANIMATIONS
+@keyframes identifier {
+    100%
+} */
+
+@keyframes write {
+    from {
+        width: 0;
+        
+    }
+    to {
+        width: 70vw;
+    }
+}
