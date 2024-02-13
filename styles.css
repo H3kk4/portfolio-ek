@@ -10,8 +10,17 @@
   color:#B3B2B2;
 }
 
+.main {
+  /* top:0;
+  left:0;
+  position: fixed; */
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
 .content {
-    position: absolute;
+  position: absolute;
   /* background: #4C3957; */
   height:100vh;
   width:100vw;
@@ -20,39 +29,42 @@
 }
 
 .content .video-lecteur{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .text-container {
-    position: absolute;
-    width: 50%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  position: absolute;
+  width: 80em;;
+  height: 50%;
+  top:25%;
+  z-index:2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
 }
 .text-container .titre {
-    position: absolute;
-    z-index: 100;
-    /* top:20vh;
-    left:20vw; */
-    margin: 0 auto;
-    font-size: 80px;
-    color:white;
-    text-shadow: -2px 2px 5px black;
-    margin:0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: write 2s steps(20, end) forwards;
-    border-right: 2px solid transparent;
+  position: relative;
+  z-index: 100;
+  margin: 0 auto;
+  font-size: 5em;
+  color:white;
+  text-shadow: -2px 2px 5px black;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: write 2s steps(20, end) forwards;
+  border-right: 2px solid transparent;
 }
 
 .text-container p {
-    position:absolute;
-    /* top:50%;
-    left:25%; */
+  position:relative;
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 .navbar {
@@ -73,11 +85,12 @@
 .navbar .logo {
   font-size:30px;
   font-weight:bold;
-  margin: 0 20px;
+  margin: 0 15px;
   color:white;
 }
 .navbar .nav-links ul {
   display:flex;
+  
 }
 
 .navbar .nav-links ul li {
@@ -89,19 +102,26 @@
 }
 
 .footer {
-    position:absolute;
-    bottom:0;
-    left:0;
-    z-index: 1;
-    background:#414073;
-    width: 100%;
-    padding:20px;
-    display:flex;
-    justify-content: center;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index: 1;
+  background:#414073;
+  width: 100%;
+  padding:20px;
+  display:flex;
+  justify-content: center;
 }
 
 .footer .mentions {
-    color:#B3B2B2;
+  color:#B3B2B2;
+}
+
+/* MEDIA */
+@media screen and (max-width:1200px) {
+  .nav-links {
+    display: none;
+  }
 }
 
 /* KEYFRAMES ANIMATIONS
@@ -115,6 +135,6 @@
         
     }
     to {
-        width: 70vw;
+        width: 88%;
     }
 }
