@@ -19,7 +19,18 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+        <img src="./assets/menu-btn.png" class="menu-btn">
     </nav>
+    <div class="navbar-mobile">
+        <ul>
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Formation</a></li>
+            <li><a href="#">Expériences</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <main class="main">
         <div class="content">
             <video class="video-lecteur" loop autoplay muted><source src="./assets/video (2160p).mp4" type="video/mp4"></video>
@@ -33,4 +44,12 @@
         <div class="mentions">© 2024 par Elouane KHOUTH</div>
     </footer>
 </body>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn")
+        const navLinks = document.querySelector(".navbar-mobile")
+        menuBtn.addEventListener('click',() => {
+            navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
