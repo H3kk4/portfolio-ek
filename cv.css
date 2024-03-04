@@ -1,0 +1,15 @@
+html {
+    overflow-y: auto;
+}
+
+body {
+    background-image: none;
+    background: #2B2031;
+    overflow-y: auto;
+}
+
+
+
+.footer {
+    position: absolute;
+}
