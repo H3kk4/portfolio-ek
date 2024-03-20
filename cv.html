@@ -34,13 +34,107 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+    <h1 class="title">Projets personnels</h1>
+    <div class="crylia">
+        <h2>Crylia</h2>
+        <div class="crylia-content">
+            <p>Projet de jeu de course composé de 20 personnes<br>
+                Le jeu se déroule dans un univers inspiré du jeu Exalight, dont les serveurs ont fermé en 2016.<br> Ce
+                projet est né de la volonté de recréer un jeu comme Exalight avec sa communauté française.<br>
+                Utilisation de Unreal Engine 4, C++ <br>
+                Modélisation 3D avec Blender<br>
+            </p>
+            <img src="./assets/crylia.png">
+        </div>
+    </div>
 
+    <div class="battleship">
+        <h2>Projet de deuxième semestre (DUT) : Bataille Navale</h2>
+        <div class="battleship-content">
+            <img src="/assets/bataille_navale.png">
+            <p>
+                Pour la fin de ma première année en DUT Informatique, il nous a été demandé de programmer un jeu de
+                bataille navale en Java, avec une IHM en Java Swing.<br>
+                Ce projet n'a duré que 4 jours, et s'est effectué par équipes de 5 étudiants. Le diagramme objet
+                ci-contre nous a été fourni au préalable, et nous avons par la suite dû nous débrouiller.<br>
+                Utilisation de Java, Java Swing, JavaScript, Git<br>
+                Plus d'informations sur le Git du projet avec le lien ci-dessous. (README.md)<br>
+                <a
+                    href="https://gitlab.univ-nantes.fr/E202866G/projetS2-2021-10-FS">https://gitlab.univ-nantes.fr/E202866G/projetS2-2021-10-FS</a>
+            </p>
+        </div>
+    </div>
 
+    <div class="vtt">
+        <h2>Projet de troisième semestre (DUT) : le VTT c'est cool</h2>
+        <div class="vtt-content">
+            <p>
+                Pour le premier semestre de la deuxième année, des groupes aléatoires ont été formés avec l'ensemble de
+                la promotion, puis chaque groupe s'est vu attribuer un projet préparé par un enseignant. Le groupe dont
+                je faisais partie a été mis sur la conception et le design d'un site de gestion du club de VTT de
+                St-Sebastien-Sur-Loire. <br>
+                Nous avons dû utiliser HTML, CSS, Laravel (framework PHP), ainsi que JavaScript. <br>
+                Ci-contre, la maquette finale du site.
+            </p>
+            <img src="./assets/VTTCool_maquette.png">
+        </div>
+        <a class="cvlink" onclick="openPDF()">Cliquez ici pour découvrir mon CV !</a>
+    </div>
 
-
+    <div class="skills">
+        <div class="programming">
+            <img src="./assets/dev.png">
+            <h2>Langages de programmation</h2>
+            <p>C<br>
+                Java<br>
+                SQL<br>
+                Python<br>
+                HTML/CSS, PHP<br>
+                JavaScript</p>
+        </div>
+        <div id="skill-case" class="computing">
+            <img src="./assets/pc.png">
+            <h2>Compétences informatiques</h2>
+            <p>
+                GLPI<br>
+                Linux (avancé)<br>
+                Certification Cisco CCNA1<br>
+                Wireshark<br>
+                VirtualBox/VMWare<br>
+                Windows Server AD
+            </p>
+        </div>
+        <div id="skill-case" class="social">
+            <img src="./assets/social.png">
+            <h2>Compétences sociales</h2>
+            <p>
+                Aisance à l'oral<br>
+                Travail en équipe<br>
+                Apprentissage rapide<br>
+                Autodidacte<br>
+                Résistance au stress
+            </p>
+        </div>
+        <div id="skill-case" class="languages">
+            .
+            <img src="./assets/lang.png">
+            <h2>Compétences linguistiques</h2>
+            <p>
+                Français (Natif)<br>
+                Anglais (C1)<br>
+                Allemand (B2)
+            </p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="popup">
+        <embed src="./assets/cv.pdf" width="900" height="900" type="application/pdf" />
+    </div>
     <footer class="footer">
         <div class="mentions">© 2024 par Elouane KHOUTH</div>
     </footer>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
