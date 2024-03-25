@@ -1,0 +1,33 @@
+html {
+    overflow-y: auto;
+}
+
+body {
+    background-image: none;
+    background: #2B2031;
+    overflow-y: auto;
+}
+
+.div-pres {
+    position: absolute;
+    top: 125px;
+    left:50vw;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 20px;
+}
+
+.title {
+    color:white;
+    font-size: 3rem;
+}
+
+.presentation {
+    color:white;
+    margin: 15px 150px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
