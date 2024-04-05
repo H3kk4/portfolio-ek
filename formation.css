@@ -1,11 +1,32 @@
 html {
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 body {
     background-image: none;
     background: #2B2031;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.parallelogram {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0;
+    transform: skewX(-95deg);
+}
+
+.parallelogram::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px; /* décalage à gauche */
+    width: 100px; /* largeur du décalage */
+    height: 100%;
+    background-color: inherit;
+    transform: skewX(50deg);
 }
 
 .title {
@@ -30,7 +51,7 @@ body {
     width: 75%;
 }
 
-.summary .list li {
+.summary .list li a {
     color:white;
     font-size: 2rem;
 } 
@@ -48,7 +69,7 @@ body {
     margin: 50px 50vw;
 }
 
-.presentation, .optsisr .description, .description2 {
+.presentation, .description, .description2 {
     color:white;
     margin: 30px 50px;
     font-size: 1.5rem;
@@ -89,6 +110,123 @@ body {
     color:white;
     font-size: 1.8rem;   
 }
+
+.stage1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 50vw;
+    transform: translate(-50%,0);
+}
+
+.stage1 .link-stage1 {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.stage2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 50vw;
+    transform: translate(-50%,0);
+}
+
+.stage2 .link-stage2 {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.veille {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 50vw;
+    transform: translate(-50%,0);
+}
+
+.veille .link-veille {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tabCompetences {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    margin: 20px 50vw;
+    transform: translate(-50%,0);
+}
+
+.tabCompetences embed {
+    margin: 50px 0;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couleur de superposition semi-transparente */
+    z-index: 99;
+    /* Assure que l'overlay est au-dessus de tout le reste */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    /*position: absolute;
+    width: 1080px;
+    height: 800px;
+    background: red; */
+}
+
+.popup-stage2 {
+    display:none;
+    top:50vh;
+    left:50vw;
+    transform: translate(-50%,-50%);
+    position:fixed;
+    z-index: 99;
+}
+
+.carousel {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.carousel .carousel-item {
+    width: calc(50% - 10px);
+    height: 400px;
+}
+
+.carousel .carousel-item::after {
+    content: "Ouvrir le PDF"
+    
+}
+
 
 .footer {
     position: relative;

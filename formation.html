@@ -8,6 +8,11 @@
     <title>Formation</title>
 </head>
 <body>
+    <!-- <div class="parallelogram"></div>
+    <div class="parallelogram" style="background-color: #414073;"></div>
+    <div class="parallelogram" style="background-color: #41658A;"></div>
+    <div class="parallelogram" style="background-color: #70A37F;"></div> -->
+
     <nav class="navbar">
         <a href="index.html" class="logo">Elouane<br>KHOUTH</a>
         <div class="nav-links">
@@ -35,23 +40,23 @@
 
     <h1 class="title">BTS SIO</h1>
 
-    <div class="summary">
+    <div class="summary" id="summary">
         <ul class="list">
-            <li>I - Présentation</li>
-            <li>II - Option SISR</li>
-            <li>III - Premier Stage</li>
+            <li><a href="#presentation">I - Présentation</a></li>
+            <li><a href="#sisr">II - Option SISR</a></li>
+            <li><a href="#stage1">III - Premier Stage</a></li>
         </ul>
         <ul class="list">
-            <li>IV - Deuxième stage</li>
-            <li>V - Veille techonologique</li>
-            <li>VI - Tableau de compétences</li>
+            <li><a href="#stage2">IV - Deuxième stage</a></li>
+            <li><a href="#veille">V - Veille techonologique</a></li>
+            <li><a href="#tableau_de_competences">VI - Tableau de compétences</a></li>
         </ul>
     </div>
 
 
     <div class="div-pres">
         <div class="h1-anim">
-            <h1>Présentation</h1>
+            <h1 id="presentation">Présentation</h1>
         </div>
         <p class="presentation">
             Le Brevet de Technicien Supérieur : Services Informatiques aux Organisations est un diplôme en deux ans octroyant un niveau de technicien aux diplômés. Il se divise en deux spécialités à partir du deuxième semestre : Solutions Logicielles et Applications Métiers, orientée développement, et Solutions d’Infrastructures, Systèmes et Réseaux, orientée administration systèmes et réseaux.
@@ -61,7 +66,7 @@
 
     <div class="optsisr">
         <div class="h1-anim">
-            <h1>Option SISR</h1>
+            <h1 id="sisr">Option SISR</h1>
         </div>
         <p class="description">
             L'option SISR s'adresse aux étudiants qui se dirigent vers les métiers impliquant la conception et la maintenance des infrastructures réseau. Assurer la sécurité, la maintenance et l'installation des réseaux et des équipements informatiques sont parmi les principales responsabilités des futurs administrateurs, techniciens ou gestionnaires de parc informatique.<br>
@@ -84,16 +89,79 @@
 
     <div class="stage1">
         <div class="h1-anim">
-            <h1>Premier stage</h1>
+            <h1 id="stage1">Premier stage</h1>
         </div>
         <p class="description">
             Le premier stage s’est déroulé durant la premiere année, du 29 mai au 30 juin 2023.
             <br>Durant ce stage, j’ai pu me familiariser avec une infrastructure complexe et la vie en entreprise. J’ai eu plusieurs missions à mener à bien : 
         </p>
+        <p class="description2 listProjets">
+            -Installation GLPI 10 from scratch<br>
+            -Installation Vaultwarden<br>
+            -Script Bash pour dump bases de données MySQL<br>
+            -Résolution de problèmes divers
+        </p>
+        <a class="link-stage1" onclick="openPDF('stage1')">Cliquez ici pour découvrir mon rapport de stage !</a>
+    </div>
+    
+    <div class="stage2">
+        <div class="h1-anim">
+            <h1 id="stage2">Deuxième stage</h1>
+        </div>
+        <p class="description">
+            Le deuxième stage s’est déroulé durant la deuxième année, du 29 janvier au 15 mars 2024.<br>
+            Ce stage m’a permis d’acquérir de plus amples connaissances en administration systèmes et réseaux grâce à ces missions : 
+ </p>
+        <p class="description2 listProjets">
+            -Recherches et mise en place de Wazuh<br>
+            -Script Bash pour dump bases de données MySQL<br>
+            -Gestion des accès aux dossiers partagés<br>
+            -Mise en place serveur Sympa<br>
+            -GLPI<br>
+            -Gestion de pare-feu Fortinet
+        </p>
+        <a class="link-stage2" onclick="openCarousel('stage2')">Cliquez ici pour découvrir les documents associés</a>
+    </div>
+
+    <div class="veille">
+        <div class="h1-anim">
+            <h1 id="veille">Veille Technologique</h1>
+        </div>
+        <p class="description">
+            La veille technologique est un procédé permettant de se tenir informé des actualités sur un sujet ou plusieurs sujets de manière passive. Dans le cadre du BTS SIO, nous devions choisir un sujet, et mettre en place une veille technologique efficace.<br>
+            Le sujet de ma veille technologique portait sur le Cloud Computing. <br>
+            <br>
+            Pour mettre en place une veille, il faut d’abord faire des recherches activement sur le sujet afin d’avoir une base d’informations permettant de connaître approximativement le sujet et d’en parler de manière brève. L’étape suivante est le choix de la technique de veille. Il existe plusieurs façons de mettre en place une telle démarche, notamment grâce aux flux RSS, qui permettent de suivre en temps réel l’actulalité apparue sur certains sites. S’abonner à un flux RSS consiste à recevoir des actualités via des sites disponibles, afin de centraliser ces données pour pouvoir les relire plus tard. Ensuite, il est important de trier toutes ces informations pour ne garder que celles qui sont vraiment pertinentes, et adapter notre filtre de recherches si les résultats sont insatisfaisants.<br>
+            <br>
+            Pour ma part, j’ai choisi l’application Feeder, ainsi que Google News et l’abonnement à certaines chaînes YouTube comme Underscore_, Micode ou Benjamin Code.
+        </p>
+        <a class="link-veille" onclick="openCarousel('veille')">Cliquez ici pour découvrir les documents associés</a>
+    </div>
+
+    <div class="tabCompetences">
+        <div class="h1-anim">
+            <h1 id="tableau_de_competences">Tableau de compétences</h1>
+        </div>
+        <embed src="./assets/TableauCompetences.pdf" width="900" height="900" type="application/pdf" />
+    </div>
+    <div id="overlay"></div>
+    <div class="popup">
+        <embed alt="pdf" id="embed" src="./assets/" width="900" height="900" type="application/pdf" />    
+    </div>
+
+    <div class="popup-stage2">
+        <div id="stage2" class="carousel">
+            <embed id="carousel-item-1" class="carousel-item" src="./assets/wazuh_installation.pdf" width="400" height="400" type="application/pdf" />
+            <embed id="carousel-item-2" class="carousel-item" src="./assets/wazuh_utilisation.pdf" width="400" height="400" type="application/pdf" />
+            <embed id="carousel-item-3" class="carousel-item" src="./assets/dump.pdf" width="400" height="400" type="application/pdf" />
+            <embed id="carousel-item-4" class="carousel-item" src="./assets/GLPI_MAJ.pdf" width="400" height="400" type="application/pdf" />
+        </div>
     </div>
 
     <footer class="footer">
         <div class="mentions">© 2024 par Elouane KHOUTH</div>
     </footer>
 </body>
+
+<script src="./script.js"></script>
 </html>
