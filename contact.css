@@ -1,0 +1,53 @@
+body {
+    background-image: none;
+    background: #2B2031;
+    overflow-y: auto;
+}
+
+
+.contact-div {
+    margin: 200px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1 {
+    position: absolute;
+    top: 130px;
+    left: 50vw;
+    transform: translate(-50%, 0);
+
+    color: white;
+    font-size: 3rem;
+}
+
+.contact-div .infos h2,
+.contact-div .infos a {
+    color: white;
+    font-size: 2rem;
+}
+
+.photo_cv {
+    position: relative;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #414073;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .mentions {
+    color: #B3B2B2;
+}
